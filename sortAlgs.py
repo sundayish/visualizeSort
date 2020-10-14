@@ -3,10 +3,10 @@ from tkinter import ttk
 import random
 
 #Import search algorithms
-from bubbleSort import bubbleSort
-from quickSort import quickSort
-from mergeSort import mergeSort
-from insertSort import insertSort
+from algorithms.bubbleSort import bubbleSort
+from algorithms.quickSort import quickSort
+from algorithms.mergeSort import mergeSort
+from algorithms.insertSort import insertSort
 
 root = Tk()
 root.title("Sorting Visualisation")

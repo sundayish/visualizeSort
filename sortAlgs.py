@@ -67,8 +67,7 @@ algMenu = ttk.Combobox(UI_frame, textvariable=selAlg, values=["Bubble-Sort", "Me
 algMenu.grid(row=0, column=1, padx=5, pady=5)
 algMenu.current(0)
 
-speedScale = Scale(UI_frame, from_=0.1, to=2.0, length=200, digits=2, resolution=0.2, orient=HORIZONTAL,
-                   label="Select Speed [s]")
+speedScale = Scale(UI_frame, from_=0.1, to=2.0, length=200, digits=2, resolution=0.1, orient=HORIZONTAL, label="Select Speed [s]")
 speedScale.grid(row=0, column=2, padx=5, pady=5)
 Button(UI_frame, text="Start", command=startAlgorithm, bg="red").grid(row=0, column=3, padx=5, pady=5)
 

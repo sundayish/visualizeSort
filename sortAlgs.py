@@ -1,8 +1,11 @@
 from tkinter import *
 from tkinter import ttk
 import random
+
+#Import search algorithms
 from bubbleSort import bubbleSort
 from quickSort import quickSort
+from mergeSort import mergeSort
 
 root = Tk()
 root.title("Sorting Visualisation")
@@ -55,10 +58,14 @@ def startAlgorithm():
 
     if (algMenu.get() == "Quick-Sort"):
         quickSort(data, 0, len(data)-1, drawData, speedScale.get())
-        drawData(data, ["green" for x in range(len(data))])
 
     elif (algMenu.get() == "Bubble-Sort"):
         bubbleSort(data, drawData, speedScale.get())
+
+    elif (algMenu.get() == "Merge-Sort"):
+        mergeSort(data, drawData, speedScale.get())
+
+    drawData(data, ["green" for x in range(len(data))])    
 
 
 # frame

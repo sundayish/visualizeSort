@@ -7,15 +7,15 @@ def mergeSortAlgo(data, left, right, drawData, timeTick):
     if left < right:
         middle = (left+right) // 2
 
-        #recursion
-        #left
+        #Recursion
+        #Left
         mergeSortAlgo(data, left, middle, drawData, timeTick)
-        #right
+        #Right
         mergeSortAlgo(data, middle+1, right, drawData, timeTick)
         merge(data, left, middle, right, drawData, timeTick)
 
 def merge(data, left, middle, right, drawData, timeTick):
-    #visualize
+    #Visualize
     drawData(data, getColorArray(len(data), left, middle, right))
     time.sleep(timeTick)
 
@@ -38,7 +38,7 @@ def merge(data, left, middle, right, drawData, timeTick):
         else:
             data[dataIndex] = rightPart[rightIndex]
             rightIndex += 1
-    #visualize
+    #Visualize
     drawData(data, ["green" if x >= left and x <= right else "white" for x in range(len(data))])
     time.sleep(timeTick)
 

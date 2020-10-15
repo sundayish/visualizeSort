@@ -82,7 +82,7 @@ canvas.grid(row=1, column=0, padx=10, pady=5)
 # UI area
 # Row[0]
 Label(UI_frame, text="Algorithm: ", bg="grey").grid(row=0, column=0, padx=5, pady=5, sticky=W)
-algMenu = ttk.Combobox(UI_frame, textvariable=selAlg, values=["Insert-Sort", "Bubble-Sort", "Quick-Sort", "Merge-Sort"])
+algMenu = ttk.Combobox(UI_frame, textvariable=selAlg, values=["Bubble-Sort", "Quick-Sort", "Merge-Sort", "Insert-Sort"])
 algMenu.grid(row=0, column=1, padx=5, pady=5)
 algMenu.current(0)
 
